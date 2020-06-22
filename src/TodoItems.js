@@ -19,12 +19,12 @@ class TodoItems extends Component {
 
     render() {
         var todoEntries = this.props.entries;
-        var listItems = todoEntries.map(this.createTasks);
+        var listThread = todoEntries.map(this.createTasks);
 
         return (
             <ul className="theList">
                 <FlipMove duration={250} easing="ease-out">
-                    {listItems}
+                    {listThread}
                 </FlipMove>
             </ul>
         );
